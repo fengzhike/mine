@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- 
+*名称：扫雷
+*作者：Shun-Kai
+*邮箱：269596458@qq.com
+*描述：
+    经典的扫雷游戏，设置三个难度等级
+*玩法：
+    1、左键单击：在判断出不是雷的方块上按下左键，可以打开该方块。如果方块上出现数字，则该数字表示其周围3×3区域中的地雷数（一般为8个格子，对于边块为5个格子，对于角块为3个格子。所以扫雷中最大的数字为8）；如果方块上为空（相当于0），则可以递归地打开与空相邻的方块；如果不幸触雷，则游戏结束。
+    2、右键单击：在判断为地雷的方块上按下右键，可以标记地雷（显示为小红旗）。重复一次标记怀疑对象(?)，重复两次操作来取消标雷。
+
+
+ -->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>扫雷</title>
+<link rel="stylesheet" href="./css/index.css">
+<script src="js/tools.js"></script>
+
+</head>
+<body>
+    <div id="section" clear>
+        <div class="left">
+            <ul>
+                <li class='center'>
+                    <input type="button" value="开始游戏"  id="start" />
+                </li>
+                <li class="time">
+                    <img src="img/biao.png" height="30" width="30" alt="">
+                    <strong>用时：</strong>
+                    <span id='timePass'>0s</span>
+                </li>
+                <li class="next"> 
+                    <input type="button" value="上一关"  id="prev" />
+                    <input type="button" value="下一关"  id="next" />
+                </li>
+                <li>
+                    <strong>游戏难度：</strong>
+                    <span id='level'>初级</span>
+                </li>
+                
+                <li>
+                    <strong>地雷总数：</strong>
+                    <span id='mineNum'>10</span>
+                </li>
+                <li>
+                    <strong>剩余地雷：</strong>
+                    <span id='mineNumL'>10</span>
+                </li>
+                <li>
+                    <p>
+                        游戏难度：<br/>
+                        1、初级难度：100个方块，10个地雷<br/>
+                        2、中级难度：400个方块，40个地雷<br/>
+                        3、高级难度：900个方块，90个地雷<br/>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="right" id="main"></div>
+    </div>
+</body>
+ <script src="./js/main.js"></script>
+</html>
