@@ -1,0 +1,19 @@
+{
+  "name": "mine",
+  "version": "1.0.0",
+  "description": "早期学习时顺手写的扫雷",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengzhike/mine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengzhike/mine/issues"
+  },
+  "homepage": "https://github.com/fengzhike/mine#readme"
+}
